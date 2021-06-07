@@ -5,7 +5,7 @@
   <parent>
     <artifactId>camel-container-tests</artifactId>
     <groupId>org.drools</groupId>
-    <version>7.55.0-SNAPSHOT</version>
+    <version>7.56.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
@@ -196,7 +196,7 @@
             <artifactId>cargo-maven3-plugin</artifactId>
             <configuration>
               <container>
-                <containerId>wildfly19x</containerId>
+                <containerId>wildfly23x</containerId>
                 <home>${project.build.directory}/application-server/wildfly-${version.org.wildfly}</home>
                 <type>installed</type>
                 <systemProperties>
@@ -319,7 +319,7 @@
                 </goals>
                 <configuration>
                   <container>
-                    <containerId>wildfly19x</containerId>
+                    <containerId>wildfly23x</containerId>
                     <home>${project.build.directory}/application-server-fuse</home>
                     <type>installed</type>
                     <contextKey>fuse</contextKey>
@@ -367,7 +367,7 @@
                 </goals>
                 <configuration>
                   <container>
-                    <containerId>wildfly19x</containerId>
+                    <containerId>wildfly23x</containerId>
                     <home>${project.build.directory}/application-server-kie-server</home>
                     <type>installed</type>
                     <contextKey>kie-server</contextKey>
